@@ -1,0 +1,1 @@
+{"minumero":12,"mistring":"Hola Mundo JavaScript","mibooleano":true}
