@@ -1,0 +1,22 @@
+{
+  "name": "npm_colors",
+  "version": "0.0.1",
+  "description": "Este paquete muestra el uso basico de npm y el modulo Colors",
+  "main": "app06.js",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app06.js",
+    "iniciar": "node app06.js"
+  },
+  "keywords": [
+    "Colors",
+    "Backend",
+    "UD"
+  ],
+  "author": "Javier Felipe Moncada Sánchez",
+  "license": "ISC"
+}
