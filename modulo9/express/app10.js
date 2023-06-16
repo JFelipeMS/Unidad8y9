@@ -15,7 +15,7 @@ server.get("/",(req,res) => {
     res.sendFile(path.join(__dirname,'/app08.html'))
 })
 server.get("/acercade",(req,res) => {
-    res.send("<h1>Curso BackEnd Basico</h1>")
+    res.sendFile(path.join(__dirname,'/acercade.html'))
 })
 server.get("/datosPersona",(req,res) => {
     const datos = {
