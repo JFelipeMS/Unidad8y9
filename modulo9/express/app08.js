@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path')
 const server = express()
 
 server.listen(8081, function(){
@@ -7,7 +8,8 @@ server.listen(8081, function(){
 
 //Rutas
 server.get("/",(req,res) => {
-    res.send("<html><body><h1>Hola Mundo Express y Node.js</h1></body></html>")
+    console.log(__dirname)
+    res.sendFile(path.join(__dirname,'/app08.html'))
 })
 server.get("/acercade",(req,res) => {
     res.send("<h1>Curso BackEnd Basico</h1>")

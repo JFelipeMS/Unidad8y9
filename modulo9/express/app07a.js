@@ -5,10 +5,12 @@ server.listen(8081, function(){
     console.log('servicio funcionando http://localhost:8081')
 })
 
+function inicio(req,res){
+    res.send("<h1>Hola Mundo Express y Node.js (callback)</h1>")
+}
 //Rutas
-server.get("/",(req,res) => {
-    res.send("<html><body><h1>Hola Mundo Express y Node.js</h1></body></html>")
-})
+server.get("/",inicio)
+server.get("/index.html",inicio)
 server.get("/acercade",(req,res) => {
     res.send("<h1>Curso BackEnd Basico</h1>")
 })
